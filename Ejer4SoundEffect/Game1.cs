@@ -2,11 +2,10 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Ejer4BasicMonogame
+namespace Ejer4SoundEffect
 {
     /// <summary>
-    /// Añade un sprite y controlalo con el teclado. No permitas que se salga de los bordes
-    /// de la pantalla.
+    /// Añade un efecto de sonido y haz que se reproduzca al pulsar una tecla.
     /// </summary>
     public class Game1 : Game
     {

@@ -2,11 +2,10 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Ejer4BasicMonogame
+namespace Ejer4SpriteSheet
 {
     /// <summary>
-    /// Añade un sprite y controlalo con el teclado. No permitas que se salga de los bordes
-    /// de la pantalla.
+    /// Investiga que es un spritesheet. Busca uno y haz que se anime en pantalla
     /// </summary>
     public class Game1 : Game
     {

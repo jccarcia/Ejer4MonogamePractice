@@ -2,11 +2,11 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Ejer4BasicMonogame
+namespace Ejer4Collision
 {
     /// <summary>
-    /// Añade un sprite y controlalo con el teclado. No permitas que se salga de los bordes
-    /// de la pantalla.
+    /// Con un objeto en pantalla que se mueva por teclado y otro que se mueva por pantalla.
+    /// Haz un chequeo de colisiones y cuando estos colisionen haz que ocurra algo.
     /// </summary>
     public class Game1 : Game
     {

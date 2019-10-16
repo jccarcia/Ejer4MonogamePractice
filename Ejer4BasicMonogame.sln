@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4BasicMonogame", "Ejer4BasicMonogame\Ejer4BasicMonogame.csproj", "{34D7B821-8447-468D-99DC-4D9593C3588F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4SpriteSheet", "Ejer4SpriteSheet\Ejer4SpriteSheet.csproj", "{309A51CF-341B-42D2-872A-F33512CA76DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4SoundEffect", "Ejer4SoundEffect\Ejer4SoundEffect.csproj", "{71FF8E3E-9C34-4B56-BC74-C91F5B43E759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4TextInScreen", "Ejer4TextInScreen\Ejer4TextInScreen.csproj", "{9D4CBD9A-23DE-4A80-8FB3-709CD0DB61CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4Collision", "Ejer4Collision\Ejer4Collision.csproj", "{47998439-88BB-44AB-8161-9E9842F52A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4ParallaxBackground", "Ejer4ParallaxBackground\Ejer4ParallaxBackground.csproj", "{D8650D06-A4BF-4EE2-8E0A-EAF4157228FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +25,26 @@ Global
 		{34D7B821-8447-468D-99DC-4D9593C3588F}.Debug|x86.Build.0 = Debug|x86
 		{34D7B821-8447-468D-99DC-4D9593C3588F}.Release|x86.ActiveCfg = Release|x86
 		{34D7B821-8447-468D-99DC-4D9593C3588F}.Release|x86.Build.0 = Release|x86
+		{309A51CF-341B-42D2-872A-F33512CA76DF}.Debug|x86.ActiveCfg = Debug|x86
+		{309A51CF-341B-42D2-872A-F33512CA76DF}.Debug|x86.Build.0 = Debug|x86
+		{309A51CF-341B-42D2-872A-F33512CA76DF}.Release|x86.ActiveCfg = Release|x86
+		{309A51CF-341B-42D2-872A-F33512CA76DF}.Release|x86.Build.0 = Release|x86
+		{71FF8E3E-9C34-4B56-BC74-C91F5B43E759}.Debug|x86.ActiveCfg = Debug|x86
+		{71FF8E3E-9C34-4B56-BC74-C91F5B43E759}.Debug|x86.Build.0 = Debug|x86
+		{71FF8E3E-9C34-4B56-BC74-C91F5B43E759}.Release|x86.ActiveCfg = Release|x86
+		{71FF8E3E-9C34-4B56-BC74-C91F5B43E759}.Release|x86.Build.0 = Release|x86
+		{9D4CBD9A-23DE-4A80-8FB3-709CD0DB61CD}.Debug|x86.ActiveCfg = Debug|x86
+		{9D4CBD9A-23DE-4A80-8FB3-709CD0DB61CD}.Debug|x86.Build.0 = Debug|x86
+		{9D4CBD9A-23DE-4A80-8FB3-709CD0DB61CD}.Release|x86.ActiveCfg = Release|x86
+		{9D4CBD9A-23DE-4A80-8FB3-709CD0DB61CD}.Release|x86.Build.0 = Release|x86
+		{47998439-88BB-44AB-8161-9E9842F52A01}.Debug|x86.ActiveCfg = Debug|x86
+		{47998439-88BB-44AB-8161-9E9842F52A01}.Debug|x86.Build.0 = Debug|x86
+		{47998439-88BB-44AB-8161-9E9842F52A01}.Release|x86.ActiveCfg = Release|x86
+		{47998439-88BB-44AB-8161-9E9842F52A01}.Release|x86.Build.0 = Release|x86
+		{D8650D06-A4BF-4EE2-8E0A-EAF4157228FC}.Debug|x86.ActiveCfg = Debug|x86
+		{D8650D06-A4BF-4EE2-8E0A-EAF4157228FC}.Debug|x86.Build.0 = Debug|x86
+		{D8650D06-A4BF-4EE2-8E0A-EAF4157228FC}.Release|x86.ActiveCfg = Release|x86
+		{D8650D06-A4BF-4EE2-8E0A-EAF4157228FC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

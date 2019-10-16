@@ -2,11 +2,11 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Ejer4BasicMonogame
+namespace Ejer4ParallaxBackground
 {
     /// <summary>
-    /// Añade un sprite y controlalo con el teclado. No permitas que se salga de los bordes
-    /// de la pantalla.
+    /// Busca un escenario o crealo tu mismo. Ponlo en pantalla y haz que este se desplace como 
+    /// un parallax background sin perderlo por pantalla.
     /// </summary>
     public class Game1 : Game
     {
