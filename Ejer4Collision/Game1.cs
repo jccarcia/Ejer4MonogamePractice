@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
 
 namespace Ejer4Collision
 {
@@ -12,11 +14,13 @@ namespace Ejer4Collision
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        Sprite s_pelota;
+        List<Sprite> sprites = new List<Sprite>();
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            
         }
 
         /// <summary>
@@ -28,6 +32,20 @@ namespace Ejer4Collision
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            s_pelota = new Sprite(graphics, new Vector2(graphics.PreferredBackBufferWidth / 2, graphics.PreferredBackBufferHeight / 2));
+            s_pelota.velocidad = new Vector2(100, 15);
+
+            
+
+            Random x = new Random();
+            for (int i = 0; i <= 46; i++)
+            {
+                sprites.Add(new Sprite(graphics, new Vector2((float)(x.NextDouble() * graphics.PreferredBackBufferWidth), (float)(x.NextDouble() * graphics.PreferredBackBufferHeight))));
+            }
+            foreach (Sprite objeto in sprites)
+            {
+                objeto.velocidad = new Vector2((float)(x.NextDouble() * 50), (float)(x.NextDouble() * 50));
+            }
 
             base.Initialize();
         }
@@ -40,6 +58,12 @@ namespace Ejer4Collision
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            s_pelota.cargarImagen(Content, "JK");
+
+            foreach (Sprite objeto in sprites)
+            {
+                objeto.cargarImagen(Content, "JK");
+            }
 
             // TODO: use this.Content to load your game content here
         }
@@ -62,6 +86,12 @@ namespace Ejer4Collision
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+            s_pelota.Mover();
+
+            foreach (Sprite objeto in sprites)
+            {
+                objeto.Mover();
+            }
 
             // TODO: Add your update logic here
 
@@ -76,6 +106,12 @@ namespace Ejer4Collision
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            s_pelota.Dibujar();
+
+            foreach (Sprite objeto in sprites)
+            {
+                objeto.Dibujar();
+            }
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
